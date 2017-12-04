@@ -412,7 +412,7 @@ var sketch = function( p ) {
 
     // dom
     reset_button = p.createButton('Reset');
-    reset_button.position(5, 25);
+    reset_button.position(5, 570);
     reset_button.mousePressed(reset_button_event); // attach button listener
 
     // data selection
@@ -420,17 +420,17 @@ var sketch = function( p ) {
     for (i=0;i<class_list.length;i++) {
       model_sel.option(class_list[i]);
     }
-    model_sel.position(75, 25);
+    model_sel.position(75, 570);
     model_sel.changed(model_sel_event);
 
     // random model buttom
     random_model_button = p.createButton('Random');
-    random_model_button.position(210, 25);
+    random_model_button.position(210, 570);
     random_model_button.mousePressed(random_model_button_event); // attach button listener
 
     // predict button
     predict_button = p.createButton('Predict');
-    predict_button.position(285, 25);
+    predict_button.position(285, 570);
     predict_button.mousePressed(predict_button_event); // attach button listener
 
     // temperature
